@@ -36,30 +36,30 @@ public class Personne implements Serializable {
     }
 
     /// acteur episode
-    @JoinTable(name = "ACTEUR")
+    @JoinTable(name = "ACTEURS")
     @ManyToMany
     List<Episode> acteursEpisodes = new ArrayList<>();
     //real episode
-    @JoinTable(name = "REALISATEUR")
+    @JoinTable(name = "REALISATEURS")
     @ManyToMany
     List<Episode> realisateursEpisodes = new ArrayList<>();
 
     ///acteur film
-    @JoinTable(name = "ACTEUR")
+    @JoinTable(name = "ACTEURS")
     @ManyToMany
     List<Film> acteursFilms = new ArrayList<>();
     // real film
-    @JoinTable(name = "REALISATEUR")
+    @JoinTable(name = "REALISATEURS")
     @ManyToMany
     List<Film> realisateursFilms = new ArrayList<>();
 
     // acteur serie
-    @JoinTable(name = "ACTEUR")
+    @JoinTable(name = "ACTEURS")
     @ManyToMany
     List<Serie> acteursSeries = new ArrayList<>();
 
     // real serie
-    @JoinTable(name = "REALISATEUR")
+    @JoinTable(name = "REALISATEURS")
     @ManyToMany
     List<Serie> realisateursSeries = new ArrayList<>();
 

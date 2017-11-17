@@ -37,15 +37,15 @@ public class Film implements Serializable {
     }
 
     @OneToMany(mappedBy = "film")
-    List<Lien> liens = new ArrayList<>();
+    private List<Lien> liens = new ArrayList<>();
 
     @JoinTable(name = "GENRE_FILM")
     @ManyToMany
-    List<Genre> genres = new ArrayList<>();
+    private List<Genre> genres = new ArrayList<>();
 
     @JoinTable(name = "PAYS_FILM")
     @ManyToMany
-    List<Pays> pays = new ArrayList<>();
+    private List<Pays> pays = new ArrayList<>();
 
   
       @ManyToMany(mappedBy = "acteursFilms")

@@ -35,11 +35,11 @@ public class Lien implements Serializable {
     
        @ManyToOne
     @JoinColumn
-    Film film;
+    private Film film;
     
          @ManyToOne
     @JoinColumn
-    Episode episode;
+    private Episode episode;
        
        
     @Override

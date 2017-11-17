@@ -40,7 +40,7 @@ public class Pays implements Serializable {
     
       @JoinTable(name = "PAYS_SERIE")
     @ManyToMany
-    List<Serie> series = new ArrayList<>();
+    private List<Serie> series = new ArrayList<>();
 
     @Override
     public int hashCode() {

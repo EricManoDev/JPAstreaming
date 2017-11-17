@@ -38,11 +38,11 @@ public class Episode implements Serializable {
     }
     
      @OneToMany(mappedBy = "episode")
-    List<Lien> liens = new ArrayList<>();
+    private List<Lien> liens = new ArrayList<>();
      
      @ManyToOne
     @JoinColumn
-    Saison saison;
+    private Saison saison;
      
      
       @ManyToMany(mappedBy = "acteursEpisodes")

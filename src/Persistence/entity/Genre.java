@@ -37,7 +37,7 @@ public class Genre implements Serializable {
 
     @JoinTable(name = "GENRE_SERIE")
     @ManyToMany
-    List<Serie> series = new ArrayList<>();
+    private List<Serie> series = new ArrayList<>();
 
     @ManyToMany(mappedBy = "genres")
     private List<Film> films = new ArrayList<>();

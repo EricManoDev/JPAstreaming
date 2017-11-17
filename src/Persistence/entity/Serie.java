@@ -36,7 +36,7 @@ public class Serie implements Serializable {
     }
     
     @OneToMany(mappedBy = "serie")
-    List<Saison> saisons = new ArrayList<>();
+    private List<Saison> saisons = new ArrayList<>();
     
      @ManyToMany(mappedBy = "series")
     private List<Genre> genres = new ArrayList<>();

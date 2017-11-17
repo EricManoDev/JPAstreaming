@@ -36,11 +36,11 @@ public class Saison implements Serializable {
         this.id = id;
     }
     @OneToMany(mappedBy = "saison")
-    List<Episode> episodes = new ArrayList<>();
+    private List<Episode> episodes = new ArrayList<>();
     
     @ManyToOne
     @JoinColumn
-    Serie serie;
+    private Serie serie;
     
     @Override
     public int hashCode() {
