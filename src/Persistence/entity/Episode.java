@@ -29,7 +29,7 @@ public class Episode implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    public Long getId() {
+    public Long getId() {  
         return id;
     }
 
@@ -43,6 +43,8 @@ public class Episode implements Serializable {
      @ManyToOne
     @JoinColumn
     private Saison saison;
+     
+     
      
      
       @ManyToMany(mappedBy = "acteursEpisodes")
